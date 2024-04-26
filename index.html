@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dados pessoais</title>
+</head>
+
+<body>
+    <h1>Bem vindo</h1>
+    <script>
+
+        var nome = prompt("Digite seu nome:")
+
+        var dia = prompt("Digite o dia do seu aniversário:")
+        var mes = prompt("Digite o mês do seu aniversário:(Números)")
+        var ano = Number.parseInt(prompt("Digite o ano do seu nascimento:"))
+        var idade = 2024 - ano
+
+        var cm = Number.parseInt(prompt("Digite sua altura:"))
+        var kg = Number.parseFloat(prompt("Digite seu peso:"))
+        metro = cm / 100
+        imc = (kg / (metro * metro)).toFixed(2)
+        
+        document.write(`Olá ${nome}, seu aniversário é ${dia}/${mes}/${ano} você tem ${idade} anos.<br><br>
+        Seu imc é ${imc} sua altura ${cm} cm e seu peso ${kg} kg.`)
+    </script>
+    <footer>
+        Feito por <a href="https://github.com/bbruno8">bBruno</a> <br> © todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
